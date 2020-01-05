@@ -1,4 +1,4 @@
-title = "template-browser"
+title = "template-web"
 description = ""
 version = "0.1.0"
 license = "MIT"
@@ -8,11 +8,11 @@ keywords = ""
 
 [build]
 directory = "build"
-target = "browser"
+target = "web"
 
-[target.browser]
+[target.web]
 directory = "src"
-target = "browser"
+target = "web"
 
 [scripts]
 test = "No tests specified"
