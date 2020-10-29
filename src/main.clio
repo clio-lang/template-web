@@ -1,2 +1,2 @@
-fn main argv:
+export fn main argv:
   "Hello World" => document.body.innerText
