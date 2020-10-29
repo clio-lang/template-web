@@ -1,1 +1,2 @@
-'Hello World' -> .valueOf => document.body.innerText
+fn main argv:
+  "Hello World" => document.body.innerText
