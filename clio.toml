@@ -33,3 +33,9 @@ server = "default"
 proto = "ww"
 wait_for = "cpu"
 server = "default"
+
+[npm]
+alias = ["last 1 Chrome version"]
+
+[npm.devDependencies]
+parcel = "next"
