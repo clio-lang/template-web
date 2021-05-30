@@ -7,12 +7,9 @@ authors = [ "Your Name <you@example.com>" ]
 keywords = ""
 
 [build]
-directory = "build"
-target = "web"
-
-[target.web]
-directory = "src"
-target = "web"
+source = "src"
+destination = "build"
+target = "js"
 
 [scripts]
 test = "No tests specified"
@@ -34,13 +31,20 @@ proto = "ww"
 wait_for = "cpu"
 server = "default"
 
+# Npm specific configs
+
 [npm]
-browserlist = ["last 1 Chrome version"]
+browserlist = ["> 0.2%", "not dead"]
+main = "index.html"
 
 [npm.alias]
-async_hooks = "./.clio/empty.js"
-worker_threads = "./.clio/empty.js"
 ws = "clio-rpc/transports/ws/shim.js"
+"main.clio.js" = "./main.clio.js"
 
 [npm.devDependencies]
 parcel = "next"
+
+[npm.scripts]
+start = "parcel index.html"
+host = "node .clio/host.js"
+build = "parcel build index.html"
