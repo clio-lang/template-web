@@ -8,8 +8,8 @@ npm-debug.log*
 build/
 
 # Clio specific cache directories
+src/.clio/modules
 .clio-cache
-clio_env
 
 # Dependency directories
 node_modules/
